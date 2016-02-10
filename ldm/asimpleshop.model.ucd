@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="1210,486" id="asimpleshop.model" metadata="uml2-1.0" initialized="true" tag="10" key="32303037303533312D3130206173696D706C6573686F702E6D6F64656C">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.1" name="Image" location="30,225" size="180,127" id="asimpleshop.model/Image" runTimeClassModel="name,description,location,defaultImage">
+    <children xsi:type="editmodel:CompartmentEditModel" size="157,80">
+      <children xsi:type="editmodel:AttributeEditModel" name="defaultImage" id="asimpleshop.model/Image#defaultImage"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="description" id="asimpleshop.model/Image#description"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="location" location="8,65" id="asimpleshop.model/Image#location"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="asimpleshop.model/Image#name"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Product" location="375,75" size="312,227" id="asimpleshop.model/Product" runTimeClassModel="priceCurrency,prodcuDescription,productImageList,price,getProductImageList(),promotionUnit,product_pk,name,productLableList,setProductImageList(Ljava.util.List;),promotion">
+    <children xsi:type="editmodel:CompartmentEditModel" size="289,180">
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="asimpleshop.model/Product#name"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="price" id="asimpleshop.model/Product#price"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="priceCurrency" id="asimpleshop.model/Product#priceCurrency"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="productImageList" id="asimpleshop.model/Product#productImageList"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="promotion" id="asimpleshop.model/Product#promotion"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="promotionUnit" id="asimpleshop.model/Product#promotionUnit"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="product_pk" id="asimpleshop.model/Product#product_pk"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="prodcuDescription" id="asimpleshop.model/Product#prodcuDescription"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="productLableList" id="asimpleshop.model/Product#productLableList"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="asimpleshop.model/Product-Soyatec::Import->asimpleshop.model/ProductDescription" source="//@children.1" target="//@children.2" targetEnd="//@children.1/@sourceConnections.0/@children.1" label="//@children.1/@sourceConnections.0/@children.2" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,83" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="249,124"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="61,18" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="asimpleshop.model/Product->asimpleshop.model/Image" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.1/@children.1" label="//@children.1/@sourceConnections.1/@children.2" sourceEnd="//@children.1/@sourceConnections.1/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,188" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="180,38"/>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,18" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="asimpleshop.model/Product->asimpleshop.model/ProductLabel" source="//@children.1" target="//@children.3" targetEnd="//@children.1/@sourceConnections.2/@children.1" label="//@children.1/@sourceConnections.2/@children.2" sourceEnd="//@children.1/@sourceConnections.2/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="73,227" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="133,0"/>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,18" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="asimpleshop.model/Product->asimpleshop.model/Label" source="//@children.1" target="//@children.4" targetEnd="//@children.1/@sourceConnections.3/@children.1" label="//@children.1/@sourceConnections.3/@children.2" sourceEnd="//@children.1/@sourceConnections.3/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="4,227" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="132,0"/>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,18" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0" name="ProductDescription" location="30,34" size="249,207" id="asimpleshop.model/ProductDescription" runTimeClassModel="breadth,length,dimensionUnit,description,weight,productDescription_pk,height,weightUnit">
+    <children xsi:type="editmodel:CompartmentEditModel" size="226,160">
+      <children xsi:type="editmodel:AttributeEditModel" name="breadth" id="asimpleshop.model/ProductDescription#breadth"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="description" id="asimpleshop.model/ProductDescription#description"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dimensionUnit" id="asimpleshop.model/ProductDescription#dimensionUnit"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="height" id="asimpleshop.model/ProductDescription#height"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="length" id="asimpleshop.model/ProductDescription#length"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="productDescription_pk" id="asimpleshop.model/ProductDescription#productDescription_pk"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="weight" id="asimpleshop.model/ProductDescription#weight"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="weightUnit" id="asimpleshop.model/ProductDescription#weightUnit"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.2" name="ProductLabel" location="315,405" size="208,107" id="asimpleshop.model/ProductLabel" runTimeClassModel="productLabel,productLabel_pk,product_pk,label1,label2,label_pk,label3">
+    <children xsi:type="editmodel:CompartmentEditModel" size="185,60">
+      <children xsi:type="editmodel:AttributeEditModel" name="label_pk" id="asimpleshop.model/ProductLabel#label_pk"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="productLabel_pk" id="asimpleshop.model/ProductLabel#productLabel_pk"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="product_pk" id="asimpleshop.model/ProductLabel#product_pk"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.3" name="Label" location="30,465" size="150,87" id="asimpleshop.model/Label" runTimeClassModel="label,label_pk">
+    <children xsi:type="editmodel:CompartmentEditModel" size="127,40">
+      <children xsi:type="editmodel:AttributeEditModel" name="label" id="asimpleshop.model/Label#label"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="label_pk" id="asimpleshop.model/Label#label_pk"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
